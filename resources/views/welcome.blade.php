@@ -169,6 +169,10 @@
                         </svg>
                         Hubungi Sekarang
                     </a>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps?q=Jl.+Pasirmas+Timur+III+no.25,+Semarang&output=embed" width="100%" height="300" style="border:0; border-radius:1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="mt-2"><a href="https://www.google.com/maps/search/Jl.+Pasirmas+Timur+III+no.25/@-6.9620427,110.4025979,17z?entry=ttu&g_ep=EgoyMDI1MDgwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lihat di Google Maps</a></p>
+                    </div>
                 </div>
             </div>
         </div>
