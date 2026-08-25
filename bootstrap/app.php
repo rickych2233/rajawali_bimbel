@@ -24,6 +24,7 @@ if (isset($_SERVER['VERCEL']) || isset($_ENV['VERCEL']) || getenv('VERCEL')) {
         'framework/views',
         'framework/cache/data',
         'framework/sessions',
+        'bootstrap/cache',
     ];
     foreach ($directories as $dir) {
         $path = '/tmp/storage/' . $dir;
