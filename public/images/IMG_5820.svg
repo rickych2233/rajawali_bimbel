@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44b0e4" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#6f44e4" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6f44e4" />
+      <stop offset="100%" stop-color="#44b0e4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-opacity="0.1" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" rx="40" fill="url(#grad1)" />
+  
+  <!-- Abstract Decorative Elements -->
+  <circle cx="650" cy="150" r="80" fill="#ffc107" opacity="0.3" />
+  <circle cx="150" cy="450" r="120" fill="#44b0e4" opacity="0.2" />
+  
+  <!-- Main Illustration Group -->
+  <g filter="url(#shadow)" transform="translate(150, 100)">
+    <!-- Main Window -->
+    <rect width="500" height="350" rx="24" fill="#ffffff" />
+    
+    <!-- Window Header -->
+    <rect width="500" height="60" rx="24" fill="#f8f9fa" />
+    <circle cx="40" cy="30" r="8" fill="#ff5f56" />
+    <circle cx="70" cy="30" r="8" fill="#ffbd2e" />
+    <circle cx="100" cy="30" r="8" fill="#27c93f" />
+    
+    <!-- Content Lines -->
+    <rect x="50" y="100" width="300" height="16" rx="8" fill="#e9ecef" />
+    <rect x="50" y="140" width="200" height="16" rx="8" fill="#e9ecef" />
+    <rect x="50" y="180" width="350" height="16" rx="8" fill="#e9ecef" />
+    <rect x="50" y="220" width="250" height="16" rx="8" fill="#e9ecef" />
+    
+    <!-- Floating Element -->
+    <rect x="320" y="150" width="220" height="140" rx="16" fill="url(#grad2)" />
+    <!-- Book/Cap icon abstraction -->
+    <path d="M 370 220 L 430 190 L 490 220 L 430 250 Z" fill="#ffffff" opacity="0.9" />
+    <path d="M 430 250 L 430 280 M 380 225 L 380 255 M 480 225 L 480 255" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  </g>
+  
+  <!-- Floating shapes -->
+  <rect x="620" y="80" width="60" height="60" rx="16" fill="#13c68b" opacity="0.8" transform="rotate(15, 650, 110)" />
+  <path d="M 120 180 L 160 110 L 80 110 Z" fill="#6f44e4" opacity="0.7" transform="rotate(-20, 120, 145)" />
+</svg>
