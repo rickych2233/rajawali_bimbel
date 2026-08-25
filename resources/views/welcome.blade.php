@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="/image/rajawali_bimbel.svg">
+    <link rel="icon" type="image/svg+xml" href="/images/rajawali_bimbel.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -314,7 +314,7 @@
     <nav class="navbar navbar-expand-lg py-3 shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="/image/rajawali_bimbel.svg" alt="Rajawali Bimbel" width="36" height="36" class="me-2">
+                <img src="/images/rajawali_bimbel.svg" alt="Rajawali Bimbel" width="36" height="36" class="me-2">
                 Rajawali Bimbel
             </a>
             <div class="d-none d-lg-flex align-items-center gap-3">
@@ -370,7 +370,7 @@
                         <div class="hero-illustration text-center position-relative">
                             <span class="floating-badge"><i class="bi bi-patch-check-fill text-success"></i>
                                 Kurikulum Terbaru</span>
-                            <img src="/image/IMG_5820.svg" alt="Ilustrasi Belajar" class="img-fluid">
+                            <img src="/images/IMG_5820.svg" alt="Ilustrasi Belajar" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -518,7 +518,7 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
                         <div class="hero-illustration h-100">
-                            <img src="/image/IMG_5792.svg" alt="Suasana Belajar" class="img-fluid">
+                            <img src="/images/IMG_5792.svg" alt="Suasana Belajar" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6">
