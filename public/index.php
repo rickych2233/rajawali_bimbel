@@ -17,15 +17,4 @@ require __DIR__.'/../vendor/autoload.php';
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-try {
-    $app->handleRequest(Illuminate\Http\Request::capture());
-} catch (\ArgumentCountError $e) {
-    if (str_contains($e->getMessage(), 'createDriver')) {
-        $trace = $e->getTrace();
-        $managerClass = $trace[0]['class'] ?? 'Unknown';
-        echo "<h1 style='color:red;'>VERCEL DEBUG: The manager causing the error is: {$managerClass}</h1>";
-        echo "<p>Please check your Vercel Environment Variables. One of the variables for this manager is set to an empty string!</p>";
-        exit;
-    }
-    throw $e;
-}
+$app->handleRequest(Illuminate\Http\Request::capture());

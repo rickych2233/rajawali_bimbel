@@ -14,7 +14,13 @@ $app = Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        //
+        $exceptions->render(function (\ArgumentCountError $e, \Illuminate\Http\Request $request) {
+            if (str_contains($e->getMessage(), 'createDriver')) {
+                $trace = $e->getTrace();
+                $managerClass = $trace[0]['class'] ?? 'Unknown';
+                return response("<h1 style='color:red;'>VERCEL DEBUG: The manager causing the error is: {$managerClass}</h1><p>Please check your Vercel Environment Variables. One of the variables for this manager is set to an empty string in the Vercel Dashboard!</p>", 500);
+            }
+        });
     })->create();
 
 if (isset($_SERVER['VERCEL']) || isset($_ENV['VERCEL']) || getenv('VERCEL')) {
